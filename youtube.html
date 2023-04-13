@@ -3,12 +3,73 @@
     <head>
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="./youtube.css" />
+        <link rel="stylesheet" href="./styles/general.css" />
+        <link rel="stylesheet" href="./styles/video.css" />
+        <link rel="stylesheet" href="./styles/header.css" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>YouTube Clone</title>
     </head>
     <body>
-        <input type="text" class="search-box" placeholder="Search here...." />
+        <div class="header">
+            <div class="left-section">
+                <img
+                    class="hamburger-menu"
+                    src="./thumbnails/icons/hamburger-menu.svg"
+                    alt=""
+                />
+
+                <img
+                    class="youtube-logo"
+                    src="./thumbnails/icons/youtube-logo.svg"
+                    alt=""
+                />
+            </div>
+            <div class="middle-section">
+                <input
+                    type="text"
+                    class="search-box"
+                    placeholder="Search here...."
+                />
+                <button class="search-button">
+                    <img
+                        class="search-icon"
+                        src="./thumbnails/icons/search.svg"
+                        alt="search-button"
+                    />
+                </button>
+                <button class="voice-search-button">
+                    <img
+                        class="voice-search-icon"
+                        src="./thumbnails/icons/voice-search-icon.svg"
+                        alt="voice-search-icon"
+                    />
+                </button>
+            </div>
+            <div class="right-section">
+                <img
+                    class="upload-icon"
+                    src="./thumbnails/icons/upload.svg"
+                    alt="upload"
+                />
+
+                <img
+                    class="youtube-apps-icon"
+                    src="./thumbnails/icons/youtube-apps.svg"
+                    alt="Apps"
+                />
+                <img
+                    class="notifications-icon"
+                    src="./thumbnails/icons/notifications.svg"
+                    alt="Notifications"
+                />
+                <img
+                    class="current-user-profile"
+                    src="./thumbnails/profile/my-channel.jpeg"
+                    alt="Profile"
+                />
+            </div>
+        </div>
         <div class="video-grid">
             <div class="video-preview">
                 <div class="thumbnail-row">
@@ -175,7 +236,7 @@
                         </p>
                     </div>
                 </div>
-            </div>  
+            </div>
         </div>
     </body>
 </html>
