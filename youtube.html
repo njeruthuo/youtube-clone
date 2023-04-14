@@ -9,10 +9,10 @@
         <link rel="stylesheet" href="./styles/header.css" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>YouTube Clone</title>
+        <title>YouTube Clone | Cloning by code.</title>
     </head>
     <body>
-        <div class="header">
+        <header class="header">
             <div class="left-section">
                 <img
                     class="hamburger-menu"
@@ -27,11 +27,7 @@
                 />
             </div>
             <div class="middle-section">
-                <input
-                    type="text"
-                    class="search-box"
-                    placeholder="Search..."
-                />
+                <input type="text" class="search-box" placeholder="Search..." />
                 <button class="search-button">
                     <img
                         class="search-icon"
@@ -51,7 +47,11 @@
             </div>
             <div class="right-section">
                 <div class="upload-tooltip">
-                    <img class="upload-icon" src="./thumbnails/icons/upload.svg" alt="upload" />
+                    <img
+                        class="upload-icon"
+                        src="./thumbnails/icons/upload.svg"
+                        alt="upload"
+                    />
                     <div class="tooltip">Upload</div>
                 </div>
 
@@ -85,226 +85,375 @@
                     <div class="tooltip">My account</div>
                 </div>
             </div>
-        </div>
-        <div class="video-grid">
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <div class="video-time">12:01</div>
-                    <img
-                        src="./thumbnails/elephant.jpeg"
-                        alt="Ndovu"
-                        class="thumbnail"
-                    />
+        </header>
+
+        <nav class="sidebar">
+            <div class="sidebar-link">
+                <img src="./thumbnails/sidebar-icons/home.svg" alt="Home" />
+                <p>Home</p>
+            </div>
+            <div class="sidebar-link">
+                <img
+                    src="./thumbnails/sidebar-icons/explore.svg"
+                    alt="Explore"
+                />
+                <p>Explore</p>
+            </div>
+            <div class="sidebar-link">
+                <img
+                    src="./thumbnails/sidebar-icons/subscriptions.svg"
+                    alt="Subscriptions"
+                />
+                <p>Subscriptions</p>
+            </div>
+            <div class="sidebar-link">
+                <img
+                    src="./thumbnails/sidebar-icons/originals.svg"
+                    alt="Originals"
+                />
+                <p>Originals</p>
+            </div>
+            <div class="sidebar-link">
+                <img
+                    src="./thumbnails/sidebar-icons/youtube-music.svg"
+                    alt="YouTube Music"
+                />
+                <p>YouTube Music</p>
+            </div>
+            <div class="sidebar-link">
+                <img
+                    src="./thumbnails/sidebar-icons/library.svg"
+                    alt="Library"
+                />
+                <p>Library</p>
+            </div>
+        </nav>
+
+        <main>
+            <div class="video-grid">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <div class="video-time">12:01</div>
+                        <img
+                            src="./thumbnails/elephant.jpeg"
+                            alt="Ndovu"
+                            class="thumbnail"
+                        />
+                    </div>
+
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img
+                                class="profile-picture"
+                                src="./thumbnails/channel-pictures/person1.jpeg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                Just amazing how wildlife can be beautiful. Join
+                                our Safaris today
+                            </p>
+
+                            <p class="video-author">
+                                Marques Brownlee &checkmark;
+                            </p>
+                            <p class="video-stats">
+                                19M views &centerdot; 1y ago
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="sidebar">
-                    <div class="sidebar-link">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <div class="video-time">2:32</div>
                         <img
-                            src="./thumbnails/sidebar-icons/home.svg"
-                            alt="Home"
+                            src="./thumbnails/nature1.jpeg"
+                            alt="Ndovu"
+                            class="thumbnail"
                         />
-                        <p>Home</p>
                     </div>
-                    <div class="sidebar-link">
-                        <img
-                            src="./thumbnails/sidebar-icons/explore.svg"
-                            alt="Explore"
-                        />
-                        <p>Explore</p>
-                    </div>
-                    <div class="sidebar-link">
-                        <img
-                            src="./thumbnails/sidebar-icons/subscriptions.svg"
-                            alt="Subscriptions"
-                        />
-                        <p>Subscriptions</p>
-                    </div>
-                    <div class="sidebar-link">
-                        <img
-                            src="./thumbnails/sidebar-icons/originals.svg"
-                            alt="Originals"
-                        />
-                        <p>Originals</p>
-                    </div>
-                    <div class="sidebar-link">
-                        <img
-                            src="./thumbnails/sidebar-icons/youtube-music.svg"
-                            alt="YouTube Music"
-                        />
-                        <p>YouTube Music</p>
-                    </div>
-                    <div class="sidebar-link">
-                        <img
-                            src="./thumbnails/sidebar-icons/library.svg"
-                            alt="Library"
-                        />
-                        <p>Library</p>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img
+                                class="profile-picture"
+                                src="./thumbnails/channel-pictures/person1.jpeg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                Some of the most beautiful landscapes in the
+                                world!
+                            </p>
+
+                            <p class="video-author">
+                                Margie Wanjiru &checkmark;
+                            </p>
+                            <p class="video-stats">
+                                219M views &centerdot; 5y ago
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="video-info-grid">
-                    <div class="channel-picture">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <div class="video-time">5:05</div>
                         <img
-                            class="profile-picture"
-                            src="./thumbnails/channel-pictures/person1.jpeg"
-                            alt=""
+                            src="./thumbnails/nature.jpeg"
+                            alt="Ndovu"
+                            class="thumbnail"
                         />
                     </div>
-                    <div class="video-info">
-                        <p class="video-title">
-                            Just amazing how wildlife can be beautiful. Join our
-                            Safaris today
-                        </p>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img
+                                class="profile-picture"
+                                src="./thumbnails/channel-pictures/person2.jpeg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                Yes. We can do this! Adopt a tree today.
+                            </p>
 
-                        <p class="video-author">Marques Brownlee &checkmark;</p>
-                        <p class="video-stats">19M views &centerdot; 1y ago</p>
+                            <p class="video-author">Julius Njeru &checkmark;</p>
+                            <p class="video-stats">
+                                192M views &centerdot; 2 days ago
+                            </p>
+                        </div>
                     </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <div class="video-time">1:01:15</div>
+                        <img
+                            src="./thumbnails/nature-iceland.jpeg"
+                            alt="Ndovu"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img
+                                class="profile-picture"
+                                src="./thumbnails/channel-pictures/person1.jpeg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                Waterfalls are some of the best tourist
+                                destinations.
+                            </p>
+
+                            <p class="video-author">
+                                Oliver Karenge &checkmark;
+                            </p>
+                            <p class="video-stats">
+                                195M views &centerdot; 1.5y ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <div class="video-time">15:19</div>
+                        <img
+                            src="./thumbnails/nature2.jpeg"
+                            alt="Ndovu"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img
+                                class="profile-picture"
+                                src="./thumbnails/channel-pictures/person1.jpeg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                Where would you go if you had all the money in
+                                the world?
+                            </p>
+
+                            <p class="video-author">Jacky Chan &checkmark;</p>
+                            <p class="video-stats">
+                                219M views &centerdot; 5y ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <div class="video-time">31:16</div>
+                        <img
+                            src="./thumbnails/nature3.jpeg"
+                            alt="Ndovu"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img
+                                class="profile-picture"
+                                src="./thumbnails/channel-pictures/person2.jpeg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                Roadtrips on another league on Kenyan roads, the
+                                country known for Safari rallies.
+                            </p>
+
+                            <p class="video-author">
+                                Paul Thuo Thandi &checkmark;
+                            </p>
+                            <p class="video-stats">
+                                192M views &centerdot; 21 days ago
+                            </p>
+                        </div>
+                    </div>                
+                </div>
+                <!-- New -->
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <div class="video-time">31:16</div>
+                        <img
+                            src="./thumbnails/nature4.jpeg"
+                            alt="Ndovu"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img
+                                class="profile-picture"
+                                src="./thumbnails/channel-pictures/person3.jpeg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, enim?
+                            </p>
+
+                            <p class="video-author">
+                                kennedy Njoroge &checkmark;
+                            </p>
+                            <p class="video-stats">
+                                192M views &centerdot; 21 days ago
+                            </p>
+                        </div>
+                    </div>                
+                </div>
+                <!-- New -->
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <div class="video-time">31:16</div>
+                        <img
+                            src="./thumbnails/nature5.jpeg"
+                            alt="Ndovu"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img
+                                class="profile-picture"
+                                src="./thumbnails/channel-pictures/person4.jpeg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi?
+                            </p>
+
+                            <p class="video-author">
+                                William Kang'ethe &checkmark;
+                            </p>
+                            <p class="video-stats">
+                                2k views &centerdot; 21 days ago
+                            </p>
+                        </div>
+                    </div>                
+                </div>
+                <!-- New -->
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <div class="video-time">31:16</div>
+                        <img
+                            src="./thumbnails/nature6.jpeg"
+                            alt="Ndovu"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img
+                                class="profile-picture"
+                                src="./thumbnails/channel-pictures/person6.jpeg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, maxime molestiae.
+                            </p>
+
+                            <p class="video-author">
+                                Sharon Nyawira &checkmark;
+                            </p>
+                            <p class="video-stats">
+                                192M views &centerdot; 21 days ago
+                            </p>
+                        </div>
+                    </div>                
+                </div>
+                <!-- New -->
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <div class="video-time">31:16</div>
+                        <img
+                            src="./thumbnails/nature8.jpeg"
+                            alt="Ndovu"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img
+                                class="profile-picture"
+                                src="./thumbnails/channel-pictures/person11.jpeg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                Roadtrips on another league on Kenyan roads, the
+                                country known for Safari rallies.
+                            </p>
+
+                            <p class="video-author">
+                                Paul Thuo Thandi &checkmark;
+                            </p>
+                            <p class="video-stats">
+                                192M views &centerdot; 21 days ago
+                            </p>
+                        </div>
+                    </div>                
                 </div>
             </div>
-
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <div class="video-time">2:32</div>
-                    <img
-                        src="./thumbnails/nature1.jpeg"
-                        alt="Ndovu"
-                        class="thumbnail"
-                    />
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img
-                            class="profile-picture"
-                            src="./thumbnails/channel-pictures/person1.jpeg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">
-                            Some of the most beautiful landscapes in the world!
-                        </p>
-
-                        <p class="video-author">Jacky Chan &checkmark;</p>
-                        <p class="video-stats">219M views &centerdot; 5y ago</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <div class="video-time">5:05</div>
-                    <img
-                        src="./thumbnails/nature.jpeg"
-                        alt="Ndovu"
-                        class="thumbnail"
-                    />
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img
-                            class="profile-picture"
-                            src="./thumbnails/channel-pictures/person2.jpeg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">
-                            Yes. We can do this! Adopt a tree today.
-                        </p>
-
-                        <p class="video-author">Julius Njeru &checkmark;</p>
-                        <p class="video-stats">
-                            192M views &centerdot; 2 days ago
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <div class="video-time">1:01:15</div>
-                    <img
-                        src="./thumbnails/nature-iceland.jpeg"
-                        alt="Ndovu"
-                        class="thumbnail"
-                    />
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img
-                            class="profile-picture"
-                            src="./thumbnails/channel-pictures/person1.jpeg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">
-                            Just amazing how wildlife can be beautiful. Join our
-                            Safaris today
-                        </p>
-
-                        <p class="video-author">Marques Brownlee &checkmark;</p>
-                        <p class="video-stats">19M views &centerdot; 1y ago</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <div class="video-time">15:19</div>
-                    <img
-                        src="./thumbnails/nature2.jpeg"
-                        alt="Ndovu"
-                        class="thumbnail"
-                    />
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img
-                            class="profile-picture"
-                            src="./thumbnails/channel-pictures/person1.jpeg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">
-                            Some of the most beautiful landscapes in the world!
-                        </p>
-
-                        <p class="video-author">Jacky Chan &checkmark;</p>
-                        <p class="video-stats">219M views &centerdot; 5y ago</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <div class="video-time">31:16</div>
-                    <img
-                        src="./thumbnails/nature3.jpeg"
-                        alt="Ndovu"
-                        class="thumbnail"
-                    />
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img
-                            class="profile-picture"
-                            src="./thumbnails/channel-pictures/person2.jpeg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">
-                            Yes. We can do this! Adopt a tree today.
-                        </p>
-
-                        <p class="video-author">Julius Njeru &checkmark;</p>
-                        <p class="video-stats">
-                            192M views &centerdot; 2 days ago
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </main>
+        <footer></footer>
     </body>
 </html>

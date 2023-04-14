@@ -17,7 +17,6 @@
 }
 
 .left-section {
-    width: 150px;
     display: flex;
     align-items: center;
 }
@@ -35,9 +34,8 @@
 .middle-section {
     flex: 1;
     display: flex;
-    max-width: 500px;
-    margin-left: 70px;
-    margin-right: 70px;
+    max-width: 470px;
+    margin-left: 60px;
     align-items: center;
 }
 
@@ -104,10 +102,11 @@
 }
 
 .right-section {
-    width: 200px;
+    width: 182px;
     display: flex;
     flex-shrink: 0;
-    margin-right: 20px;
+    margin-left: 29px;
+    margin-right: 24px;
     align-items: center;
     justify-content: space-between;
 }
