@@ -1,31 +1,38 @@
 .video-grid {
+    row-gap: 16px;
+    padding: 20px;
     display: grid;
-    column-gap: 15px;
-    row-gap: 20px;
+    column-gap: 8px;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1000px) {
     .video-grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 
-/* @media screen and (max-width: 450px and max-width: 650px) {
-    .video-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-} */
-
-@media screen and (max-width: 650px) {
+@media (min-width: 800px) and (max-width: 1000px) {
     .video-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
+@media (min-width: 550px) and (max-width: 800px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 550px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .video-info-grid {
     display: grid;
-    grid-template-columns: 60px 1fr;
+    grid-template-columns: 50px 1fr;
 }
 
 .video-preview {
@@ -38,14 +45,17 @@
 }
 
 .thumbnail-row {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     position: relative;
 }
 
 .video-title {
     width: 100%;
     margin-top: 0;
+    font-size: 14px;
     font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
 }
 
 .video-author,
@@ -56,17 +66,17 @@
 }
 
 .profile-picture {
-    width: 50px;
+    width: 36px;
     border-radius: 50%;
 }
 
-.video-time{
-    right: 8px;
+.video-time {
+    right: 5px;
     bottom: 8px;
     padding: 4px;
     color: white;
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 500;
     position: absolute;
     border-radius: 2px;
     background-color: black;

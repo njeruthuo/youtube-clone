@@ -11,10 +11,10 @@ Bold 500, 700
 
 body {
     margin: 0;
-    padding: 0;
     padding-top: 90px;
     padding-left: 95px;
-    padding-bottom: 1000px;
+    padding-right: 24px;
+    background-color: rgb(248,248,248);
 }
 
 p {
