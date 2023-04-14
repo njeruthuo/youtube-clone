@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <link rel="stylesheet" href="./styles/sidebar.css" />
         <link rel="stylesheet" href="./youtube.css" />
         <link rel="stylesheet" href="./styles/general.css" />
         <link rel="stylesheet" href="./styles/video.css" />
@@ -58,11 +59,15 @@
                     src="./thumbnails/icons/youtube-apps.svg"
                     alt="Apps"
                 />
-                <img
-                    class="notifications-icon"
-                    src="./thumbnails/icons/notifications.svg"
-                    alt="Notifications"
-                />
+
+                <div class="notifications-icon-container">
+                    <img
+                        class="notifications-icon"
+                        src="./thumbnails/icons/notifications.svg"
+                        alt="Notifications"
+                    />
+                    <div class="notifications-count">2</div>
+                </div>
                 <img
                     class="current-user-profile"
                     src="./thumbnails/profile/my-channel.jpeg"
@@ -73,12 +78,16 @@
         <div class="video-grid">
             <div class="video-preview">
                 <div class="thumbnail-row">
+                    <div class="video-time">12:01</div>
                     <img
                         src="./thumbnails/elephant.jpeg"
                         alt="Ndovu"
                         class="thumbnail"
                     />
                 </div>
+
+                <div class="sidebar">sidebar</div>
+
                 <div class="video-info-grid">
                     <div class="channel-picture">
                         <img
@@ -101,6 +110,7 @@
 
             <div class="video-preview">
                 <div class="thumbnail-row">
+                    <div class="video-time">2:32</div>
                     <img
                         src="./thumbnails/nature1.jpeg"
                         alt="Ndovu"
@@ -128,6 +138,7 @@
 
             <div class="video-preview">
                 <div class="thumbnail-row">
+                    <div class="video-time">5:05</div>
                     <img
                         src="./thumbnails/nature.jpeg"
                         alt="Ndovu"
@@ -156,6 +167,7 @@
             </div>
             <div class="video-preview">
                 <div class="thumbnail-row">
+                    <div class="video-time">1:01:15</div>
                     <img
                         src="./thumbnails/nature-iceland.jpeg"
                         alt="Ndovu"
@@ -184,6 +196,7 @@
 
             <div class="video-preview">
                 <div class="thumbnail-row">
+                    <div class="video-time">15:19</div>
                     <img
                         src="./thumbnails/nature2.jpeg"
                         alt="Ndovu"
@@ -211,6 +224,7 @@
 
             <div class="video-preview">
                 <div class="thumbnail-row">
+                    <div class="video-time">31:16</div>
                     <img
                         src="./thumbnails/nature3.jpeg"
                         alt="Ndovu"

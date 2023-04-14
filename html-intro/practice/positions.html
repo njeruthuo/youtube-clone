@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Positions Assignment</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+            * {
+                font-family: roboto;
+            }
+
+            .ex1-div {
+                position: relative;
+                border: 1px solid black;
+                width: 300px;
+                height: 100px;
+            }
+
+            .ex1-div .close-btn {
+                position: absolute;
+                background-color: black;
+                color: white;
+                top: 12px;
+                right: 10px;
+                width: 30px;
+                height: 25px;
+                border-radius: 20px;
+                font-family: roboto;
+                text-align: center;
+                padding-top: 6px;
+            }
+
+            .ex2-div {
+                margin-top: 55px;
+                position: relative;
+                width: 550px;
+                height: 300px;
+                border: 1px solid black;
+            }
+
+            .ex2-div .section {
+                position: absolute;
+                bottom: 20px;
+                right: 15px;
+                width: 350px;
+                height: 150px;
+                background-color: gray;
+            }
+
+            .shirt1 {
+                /* border: 1px solid rgb(12, 9, 9); */
+                position: relative;
+                background-color: rgb(192, 190, 190);
+                width: 450px;
+                height: 300px;
+                text-align: center;
+                margin: 100px 200px;
+                padding: 55px;
+            }
+
+            .discount {
+                position: absolute;
+                top: 15px;
+                right: 0;
+                background-color: black;
+                color: white;
+                font-size: 14px;
+                padding: 10px;
+                width: 55px;
+            }
+            .shirt1 .shirt1-img {
+                background-color: rgb(204, 178, 178);
+            }
+
+            .shirt2 {
+                position: relative;
+                background-color: rgb(192, 190, 190);
+                width: 450px;
+                height: 300px;
+                text-align: center;
+                margin: 100px 200px;
+                padding: 55px;
+            }
+
+            .shirt2-img {
+                width: 75%;
+                height: 100%;
+            }
+
+            .cart {
+                background-color: rgba(192, 190, 190, 0.75);
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                height: 35%;
+                left: 0;
+            }
+            .cart p{
+                border: 1px solid black;
+                position: absolute;
+                bottom: 50px;
+                left: 200px;
+                right: 200px;
+
+                padding: 10px 10px;
+                background-color: rgb(214, 212, 212);
+                /* text-align: center; */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ex1-div">
+            <div class="close-btn">X</div>
+        </div>
+
+        <div class="ex2-div">
+            <div class="section"></div>
+        </div>
+
+        <div class="shirt1">
+            <img class="shirt1-img" src="./shirt.jpeg" alt="Shirt" />
+            <div class="discount">20% OFF</div>
+        </div>
+
+        <div class="shirt2">
+            <img class="shirt2-img" src="./shirt2.jpg" alt="Shirt2" />
+            <div class="discount">20% OFF</div>
+            <div class="cart">
+                <p>Add to cart</p>
+            </div>
+        </div>
+    </body>
+</html>

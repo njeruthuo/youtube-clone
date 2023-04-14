@@ -1,5 +1,3 @@
-
-
 .video-grid {
     display: grid;
     column-gap: 15px;
@@ -41,22 +39,35 @@
 
 .thumbnail-row {
     margin-bottom: 10px;
+    position: relative;
 }
 
 .video-title {
     width: 100%;
-    font-weight: 500;
     margin-top: 0;
+    font-weight: 500;
 }
 
 .video-author,
-.video-stats{
+.video-stats {
     margin-top: 8px;
     font-size: 12px;
-    color: rgb(96,96,96);
+    color: rgb(96, 96, 96);
 }
 
 .profile-picture {
-    border-radius: 50%;
     width: 50px;
+    border-radius: 50%;
+}
+
+.video-time{
+    right: 8px;
+    bottom: 8px;
+    padding: 4px;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    border-radius: 2px;
+    background-color: black;
 }
